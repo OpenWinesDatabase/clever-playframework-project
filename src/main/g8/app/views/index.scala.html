@@ -1,0 +1,11 @@
+@()
+
+@moreScripts = {
+    <script>
+        $js_lib_name$.init(document.getElementById('app'));
+    </script>
+}
+
+@main("$name$", moreScripts = moreScripts) {
+    <div id="app"></div>
+}
