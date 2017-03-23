@@ -74,20 +74,20 @@ module.exports = {
         loader: 'file-loader'
       },
       {
-        test: /\.json$/,
+        test: /\.json\$/,
         loader: 'json-loader'
       },
       {
-        test: /\.scss$/,
+        test: /\.scss\$/,
         loaders: ['style', 'css', 'sass']
       },
       {
-        test: /\.css$/,
-        exclude: /\.useable\.css$/,
+        test: /\.css\$/,
+        exclude: /\.useable\.css\$/,
         loader: 'style!css'
       },
       {
-        test: /\.useable\.css$/,
+        test: /\.useable\.css\$/,
         loader: 'style/useable!css'
       }
     ]
