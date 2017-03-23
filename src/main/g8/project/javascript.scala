@@ -27,7 +27,7 @@ object Javascript {
   val javascriptDirectory = SettingKey[File]("javascript-assets-directory")
   val javascriptBuild = TaskKey[Int]("js-build")
   val buildScript = """
-                      |if [ -n "$BUILD_JS" ] && [ "$BUILD_JS" == "true" ]; then
+                      |if [ -n "\$BUILD_JS" ] && [ "\$BUILD_JS" == "true" ]; then
                       |    echo "On CleverCloud, sourcing nvm"
                       |    source /home/bas/.nvm/nvm.sh
                       |    echo "using latest node version (7.5.0)"

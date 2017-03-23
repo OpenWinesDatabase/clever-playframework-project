@@ -50,27 +50,27 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js|\.jsx|\.es6$/,
+        test: /\.js|\.jsx|\.es6\$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
       },
       {
-        test: /node_modules\/auth0-lock\/.*\.js$/,
+        test: /node_modules\/auth0-lock\/.*\.js\$/,
         loaders: [
           'transform-loader/cacheable?brfs',
           'transform-loader/cacheable?packageify'
         ]
       },
       {
-        test: /node_modules\/auth0-lock\/.*\.ejs$/,
+        test: /node_modules\/auth0-lock\/.*\.ejs\$/,
         loader: 'transform-loader/cacheable?ejsify'
       },
       {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?\$/,
         loader: 'url-loader?limit=10000&minetype=application/font-woff'
       },
       {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?\$/,
         loader: 'file-loader'
       },
       {
