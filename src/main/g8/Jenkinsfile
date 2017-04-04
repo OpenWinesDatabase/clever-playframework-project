@@ -9,7 +9,7 @@ node {
 	    stage 'Build'
 		notifyStarted()
 	    sh "/home/bas/.nvm/nvm.sh install 7.5.0"
-	    sh "cd javascript; npm install-g yarn; yarn install; yarn run build"
+	    sh "cd javascript; npm install -g yarn; yarn install; yarn run build"
 	    sh "./bin/activator ';clean;compile;stage'"
 		notifySuccessful()
 	} catch (e) {
