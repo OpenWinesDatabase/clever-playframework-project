@@ -30,9 +30,9 @@ object Javascript {
                       |if [ -n "\$BUILD_JS" ] && [ "\$BUILD_JS" == "true" ]; then
                       |    echo "On CleverCloud, sourcing nvm"
                       |    source /home/bas/.nvm/nvm.sh
-                      |    echo "using latest node version (7.5.0)"
-                      |    nvm install 7.5.0
-                      |    nvm use 7.5.0
+                      |    echo "using latest node version (7.7.2)"
+                      |    nvm install 7.7.2
+                      |    nvm use 7.7.2
                       |    echo "Installing Yarn"
                       |    npm install -g yarn
                       |    echo "Installing JS deps"
